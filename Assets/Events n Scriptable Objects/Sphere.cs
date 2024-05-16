@@ -1,23 +1,24 @@
 using Events;
 using System.Collections;
 using System.Collections.Generic;
+using System.Reflection;
 using UnityEngine;
 
 public class Sphere : MonoBehaviour
 {
     private void OnEnable()
     {
-        TestEvents.Jump += Jumping;
+        TestEvents.Jump += JumpingS;
         TestEvents.DamageTaken += TookDamage;
     }
 
     private void OnDisable()
     {
-        TestEvents.Jump -= Jumping;
+        TestEvents.Jump -= JumpingS;
         TestEvents.DamageTaken -= TookDamage;
     }
 
-    private void Jumping()
+    private void JumpingS()
     {
         Debug.Log("Esfera Pulou");
     }

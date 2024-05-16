@@ -29,11 +29,12 @@ public class Cube : MonoBehaviour
 
     private void Jumping()
     {
-        Debug.Log("Esfera Pulou");
+        Debug.Log("Cubo Pulou");
     }
 
     private void TookDamage()
     {
         Debug.Log("Funcionou");
+        
     }
 }
